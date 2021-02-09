@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .2s linear;
+}
+ 
+body{
+    background:whitesmoke;
+}
+.button {
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 4rem;
+    width: 14rem;
+  }
+  
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: skyblue;
+    height: 100%;
+    width: 0%;
+    transition: .2s;
+    z-index: -1;
+  }
+  
+.button:hover::before {
+    width: 100%;
+  }
+.carousel-item img{
+    max-height: 750px;
+}
+.bg-color{
+    background: black !important;
+}
+.bg-color-scrolled{
+    background :transparent !important;
+}
+.dropdown-menu{
+    background-color: white  !important;
+    border: black 1px solid;
+}
+.nav-item:hover{
+    border: white 1px solid;
+}
+.dropdown-item:hover{
+    color: white;
+    background-color: black;
+}
+
+main .btn {
+  margin-left:20%;
+
+}
+.services{
+    color: black;
+}
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 18rem;
+}
+.card-body{
+    height: 15rem;
+}
+.works {
+    
+    margin: 30px;
+    text-align: center;
+    color: black;
+}
+.works h1{
+    color: skyblue;
+} 
+.works .row{
+    padding: 15px;
+    text-align:left;
+    background-image: url("https://images.unsplash.com/photo-1555421689-491a97ff2040?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvZnR3YXJlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+.works button{
+    margin-left:30% ;
+}
+#projects .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    width: 90%;
+  }
+  
+  #projects .box-container .box {
+    height: 20rem;
+    width: 25rem;
+    border-radius: .5rem;
+    margin: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0 0 .5rem #333;
+            box-shadow: 0 0 .5rem #333;
+  }
+  
+  #projects .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  #projects .box-container .box .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.6);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    color: #fff;
+    transform: scale(0);
+  }
+  
+  #projects .box-container .box .info h3 {
+    font-size: 3rem;
+  }
+  
+  #projects .box-container .box .info p {
+    font-size: 1.3rem;
+    border-bottom: 0.2rem solid skyblue;
+    border-top: 0.2rem solid skyblue;
+    margin: 1rem 2rem;
+  }
+  
+  #projects .box-container .box:hover .info {
+    transform: scale(1);
+  }
+  #projects .heading{
+    color: skyblue;
+  }
+  #connect button{
+    right: 150px;
+
+  }
+  footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    color: white;
+    margin-top:100px;
+  }
+  
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .footer-middle {
+    padding-top: 2em;
+    color: white;
+  }
+  
+  
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  .social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+  }
+  
+  .social-network a.icoLinkedin:hover,
+  .social-network a.icoGithub:hover,
+  .social-network a.icoİnstagram:hover {
+    background-color: #007bb7;
+  }
+  
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoLinkedin:hover i,
+  .social-network a.icoGithub:hover i,
+  .social-network a.icoİnstagram:hover i {
+    color: #fff;
+  }
+  
+  .social-network a.socialIcon:hover,
+  .socialHoverClass {
+    color: #44BCDD;
+  }
+  
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+  
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .social-circle li a:hover i,
+  .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  .social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+  .social-network a {
+    background-color: #F9F9F9;
+  }
+
+
+
